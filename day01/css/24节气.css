@@ -1,0 +1,198 @@
+
+*{
+   margin:0px;
+   padding:0px; 
+}
+
+
+
+
+
+#header{
+    width: 100%;
+  /*  height: 50px;*/
+    background-color: #F8F8F9;
+}
+#kuang2{
+width: 100%;
+/*height: 220px;*/
+background-color: rgb(241, 240, 238);
+}
+#kuang2 .dongtaitu{
+margin-top: 20px;
+margin-left: 125px;
+}
+#kuang3{
+/*height: 200px;*/
+width: 100%;
+background-color: rgb(244, 250, 250);
+}
+#kuang3 .xiaokuang{
+    width: 960px;
+    height: 150px;
+    border: 1px solid black;
+    margin-left: 125px;
+}
+#kuang3 .xiaokuang .xiaokuang1{
+    font-size: 34px;
+    width: 84px;
+    /*height: 84px;*/
+    margin-left: 10px;
+    color: #fff;
+    background-color: red;
+    line-height: 84px;
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+}
+#kuang3 .xiaokuang .xiaokuang2{
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+    line-height: 40px;
+
+
+}
+#kuang .xiaokuang .xiaokuang3{
+   /* height: 40px;*/
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#kuang4{
+    width: 100%;
+}
+#kuang4 .tupian1{
+    margin-right: 20px;
+    float: left;
+    width: 340px;
+   /* height: 282px;*/
+    margin-left: 125px;
+
+}
+#kuang4 .tupian2{
+    width: 235px;
+    float: left;
+   /* height: 275px;*/
+    margin-left: 15px;
+    border: 1px solid #ccc;
+
+}
+#kuang4 .tupian3{
+    margin-top: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+
+#kuang5{
+    width: 960px;
+    height: 50px;
+    margin-left: 125px;
+    
+}
+#ziti{
+    
+    margin-left: 30px;
+    margin-top: 10px;   
+}
+#maodian{
+    float: right;
+    margin-bottom: 80px;
+}
+#kuang6{
+    width: 960px;
+    height: 900px;
+    /* background-color: darkgreen; */
+    margin-left: 125px;
+}
+#biaoge{
+    margin-left: 200px;
+}
+table{
+    border: 1px solid red;
+    border-collapse:collapse;
+    widows: 50px ;
+    height: 50px;
+    }
+    td{
+        width: 50px;
+        height: 50px;
+        border: 1px solid #c0c0c0; 
+        font-size: 14px;
+        columns: #000;
+        border-collapse:collapse;
+        font-family: arial;
+        text-align:center;
+    }
+   th{
+       width: 25px;
+       height: 50px;
+       border: 1px solid  #c0c0c0; ; 
+       
+   }
+   #www{
+       font-size: 15px;
+       margin-left:737px ;
+   }
+   a{
+    text-decoration:none;
+    color: black;
+    
+   }
+   #season{
+       background-color: #95a7bf;
+       color: #fff;
+       font-size: 14px;
+   }
+   #month{
+    background-color:#cd8964;
+    color: #fff;
+    font-size: 14px;
+   }
+   #konb{
+    background-color: #f46f74;
+    font-size: 14px;
+    color: #fff;
+   }
+   #centre{
+    background-color: #9fc687;
+    font-size: 14px;
+    color: #fff;
+   }
+   #Spring{
+    background-color: #9fc687;
+    color: #fff;
+       font-size: 14px;
+       text-align:center;
+   }
+   #Summer{
+    background-color: #f46f74;
+    color: #fff;
+       font-size: 14px;
+       text-align:center;
+   }
+   #Autumn{
+    background-color:#cd8964;
+    color: #fff;
+       font-size: 14px;
+       text-align:center;
+   }
+   #Winter{
+    background-color: #95a7bf;
+    color: #fff;
+       font-size: 14px;
+       text-align:center;
+   }
+ p{padding: 10px 0}
+ #biaoge2{
+     margin-left: 170px ;
+ }
+   td{
+       width: 50px;
+       height: 30px;
+       
+   }
+ #shijian{
+     width: 150px;
+ }
+ #jianqiyes{
+     background-color: #cfcdcd;
+ }
