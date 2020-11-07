@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{Stl.SiteUrl}/css/index.css">
+    <link rel="stylesheet" href="{Stl.SiteUrl}/css/swiper-bundle.css">
+    <script src="{Stl.SiteUrl}/js/flexible.js"></script>
+    <script src="{Stl.SiteUrl}/js/jquery.js"></script>
+    <script src="{Stl.SiteUrl}/js/swiper-bundle.js"></script>
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <div id="header">
+        <div class="header1"><img id="headerimg" src="images/菜单白.png" alt=""></div>
+        <div class="header2"><img src="./images/logo1.png" alt=""></div>
+        <div class="header3">登录</div>
+    </div>
+    <!-- 轮播图开始 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <stl:contents channelindex="lunbo" order="back">
+                <div class="swiper-slide">
+                    <stl:each type="imageUrl">
+                        <stl:image></stl:image>
+                    </stl:each>
+                </div>
+            </stl:contents>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- 轮播图结束 -->
+
+    <!-- 导航图开始 -->
+    <div id="logo">
+        <div class="logo-list">
+            <stl:a channelIndex="chanpin">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="1">
+                    <stl:content type="imageUrl"></stl:content>
+                </stl:contents>
+            </stl:a>
+            
+            <div class="logo-text">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="1">
+                    <stl:content type="title"></stl:content>
+                </stl:contents>
+            </div>
+        </div>
+        <div class="logo-list">
+            <stl:a channelIndex="Checkoutcounter">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="2">
+                    <stl:content type="imageUrl"></stl:content>
+                </stl:contents>
+            </stl:a>
+            
+            <div class="logo-text">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="2">
+                    <stl:content type="title"></stl:content>
+                </stl:contents>
+            </div>
+        </div>
+        <div class="logo-list">
+            <stl:a channelIndex="jiejue">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="3">
+                    <stl:content type="imageUrl"></stl:content>
+                </stl:contents>
+            </stl:a>
+            
+            <div class="logo-text">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="3">
+                    <stl:content type="title"></stl:content>
+                </stl:contents>
+            </div>
+        </div>
+        <div class="logo-list">
+            <stl:a channelIndex="cooperation">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="4">
+                    <stl:content type="imageUrl"></stl:content>
+                </stl:contents>
+            </stl:a>
+            
+            <div class="logo-text">
+                <stl:contents channelindex="logo" order="back" totalNum="1" startNum="4">
+                    <stl:content type="title"></stl:content>
+                </stl:contents>
+            </div>
+        </div>
+    </div>
+    <!-- 导航图结束 -->
+
+    <!-- 星云餐介绍开始 -->
+    <div class="titleBar">
+        <div class="titleBar1">
+            <span>
+                星云餐介绍
+            </span>
+            <div class="titleBar3"></div>
+        </div>
+        <div class="titleBar2">
+            Introduce
+        </div>
+    </div>
+    <div id="introduce">
+        <div class="introduceImg">
+            <stl:channel channelindex="introduce" type="imageUrl"></stl:channel>
+        </div>
+        <div class="introduceText">
+            <div>
+                <stl:channel channelindex="introduce" type="content"></stl:channel>
+            </div>
+        </div>
+    </div>
+    <!-- 星云餐介绍结束 -->
+    
+    <!-- 系统优势开始 -->
+    <div class="titleBar">
+        <div class="titleBar1">
+            <span>
+                系统优势
+            </span>
+            <div class="titleBar3"></div>
+        </div>
+        <div class="titleBar2">Advantage</div>
+    </div>  
+    <div id="Advantage-box">
+        <stl:contents channelindex="Advantage" order="back">
+            <div class="Advantage-con">
+                <div class="Advantage-img">
+                    <stl:each type="imageUrl">
+                        <stl:image></stl:image>
+                    </stl:each>
+                </div>
+                <div class="Advantage-title">
+                    <stl:each>
+                        <stl:content type="Title"></stl:content>
+                    </stl:each>
+                </div>
+                <div class="Advantage-text">
+                    <stl:each>
+                        <stl:content type="content"></stl:content>
+                    </stl:each>
+                </div>
+            </div>
+        </stl:contents>
+    </div>
+    <!-- 系统优势结束 -->
+    <!-- 合作伙伴开始 -->
+    <div id="cp">
+        <div class="titleBar">
+            <div class="titleBar1">
+                <span>
+                    合作伙伴
+                </span>
+                <div class="titleBar3"></div>
+            </div>
+            <div class="titleBar2">
+                Cooperative Partner
+            </div>
+        </div>
+        <div class="cp1">
+            <stl:contents channelindex="cp" order="back">
+                <div class="cp1a">
+                    <stl:each type="imageUrl">
+                        <stl:image></stl:image>
+                    </stl:each>
+                </div>
+            </stl:contents>
+            <div class="cp1a">
+                抚州市数字经济投资发展有限公司
+            </div>
+        </div>
+    </div>
+    <!-- 合作伙伴结束 -->
+    <!-- 行业资讯开始 -->
+    <div id="ininfor">
+      <div class="titleBar">
+            <div class="titleBar1">
+                <span>
+                    行业资讯
+                </span>
+                <div class="titleBar3"></div>
+            </div>
+            <div class="titleBar2">
+                Industry lnformation
+            </div>
+      </div>  
+      <stl:contents channelindex="ininfor" order="back" totalNum="6">
+        <div class="ininfor2">
+            <div class="ininfor2a">
+                <div class="ininfor2as1">
+                    <stl:each>
+                        <stl:content type="Title"></stl:content>
+                    </stl:each>
+                </div> 
+                <div class="ininfor2as2">
+                    <stl:each>
+                        <stl:content type="content" isClearTags="true"></stl:content>
+                    </stl:each>
+                </div>
+                <div class="ininfor2as3">
+                    <stl:each>
+                        <stl:content type="source"></stl:content>
+                    </stl:each>
+                </div>
+            </div>
+            <div  class="ininfor2b">
+                <stl:each type="imageUrl">
+                    <stl:image></stl:image>
+                </stl:each>
+            </div>
+        </div>
+      </stl:contents>
+      <div class="ininfor3">
+        <div>
+            查看更多
+        </div>
+        <div>
+            <img src="./images/右箭头.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- 行业资讯结束 -->
+    <!-- 代理合作开始 -->
+    <div id="cooperation">
+        <div class="titleBar">
+            <div class="titleBar1">
+                <span>
+                    代理合作
+                </span>
+                <div class="titleBar3"></div>
+            </div>
+            <div class="titleBar2">
+                Cooperation
+            </div>
+        </div>
+        <div class="cooperationForm">
+            <form action="" id="cooperationForm">
+                <input type="text" class="cooinp" placeholder="   请填写称呼">
+                <input type="text" class="cooinp" placeholder="   请填写电话">
+                <input type="text" class="cooinp" placeholder="   请填写所在城市">
+                <input type="text" class="cooinp" placeholder="   请填写在职企业">
+                <input type="text" class="cooinp" placeholder="   请填写所在职位">
+                <label for="" class="coolab">
+                    温馨提示：您的信息涉及个人隐私安全，我们承诺将严格保密
+                </label>
+                <button class="coobtn">提交</button>
+            </form>
+            <div class="cooperationtxt">
+                <div class="cooperationtxt1">
+                    北京百辰合胜科技有限公司
+                </div>
+                <div class="cooperationtxt2">
+                    联系热线：400-9960922
+                </div>
+                <div class="cooperationtxt2">
+                    技术电话：13688888888
+                </div>
+                <div class="cooperationtxt2">
+                    电子邮箱：kefu@xingyuncan.com
+                </div>
+                <div class="cooperationtxt2">
+                    工作时间：7x24h
+                </div>
+                <div class="cooperationtxt2">
+                    具体地址：北京市石景山区实兴东街11号5层5151室
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 合作代理结束 -->
+    <!-- 底部信息栏开始 -->
+    <div id="footer">
+        Copyright C 2020- 2022星云餐版权备案号:京ICP备19051168号-1
+    </div>
+    <!-- 底部信息栏结束 -->
+    <!-- 底部按钮开始 -->
+    <div id="btmbtn">
+        <div class="btmbtn">
+            <span class="btmbtnsp"><img src="./images/liuyan@2x.png" alt=""></span>
+            <span class="btmbtnsp2">在线留言</span>
+        </div>
+        <span class="btmbtnsp1"></span>
+        <div class="btmbtn">
+            <span class="btmbtnsp"><img src="./images/路径@2x.png" alt=""></span>
+            <span class="btmbtnsp2">联系电话</span>
+        </div>
+    </div>
+    <!-- 底部按钮结束 -->
+    <!-- 蒙版 -->
+    <div id="mengban">
+
+    </div>
+    <!-- 蒙版 -->
+    <!-- 留言开始 -->
+    <div id="liuyan">
+        <div class="liuyan1">
+            在线留言
+            <img id="close1" src="./images/close.png" alt="">
+        </div>
+        <div class="liuyan2">
+            <input type="text" placeholder="请填写称呼">
+        </div>
+        <div class="liuyan2">
+            <input type="text" placeholder="请填写电话">
+        </div>
+        <div class="liuyan2">
+            <input type="text" placeholder="请填写企业名称">
+        </div>
+        <div class="liuyan5">
+            <textarea name="" id="" cols="30" rows="10" placeholder="请填写留言"></textarea>
+        </div>
+        <div class="liuyan3">温馨提示:您的信息涉及个人隐私安全，我们承诺将严格保密</div>
+        <div class="liuyan4">
+            <button>提交</button>
+        </div>
+    </div>
+    <!-- 留言结束 -->
+    <!-- 联系开始 -->
+    <div id="lianxi">
+        <div class="liuyan1">
+            联系电话
+            <img id="close2" src="./images/close.png" alt="">
+        </div>
+        <div class="lianxi1">
+            星云餐电话：400-9960922
+        </div>
+        <div class="lianxi2">
+            <a href="tel:400-9960922">立即拨打</a>
+        </div>
+    </div>
+    <!-- 联系结束 -->
+    <!-- 左滑菜单开始 -->
+    <div id="menu">
+        <div class="menuHead"><img id="close3" src="./images/close.png" alt=""></div>
+        <div class="menuBody">
+            <div>
+                <stl:a channelIndex="index">首页</stl:a>
+            </div>
+            <div class="menuimg">
+                <img src="./images/右箭头.png" alt="">
+            </div>
+        </div>
+        <div class="menuBody">
+            <div>
+                <stl:a channelIndex="chanpin">产品中心</stl:a>
+            </div>
+            <div class="menuimg">
+                <img src="./images/右箭头.png" alt="">
+            </div>
+        </div>
+        <div class="menuBody">
+            <div>
+                <stl:a channelIndex="Checkoutcounter">智能硬件</stl:a>
+            </div>
+            <div class="menuimg">
+                <img src="./images/右箭头.png" alt="">
+            </div>
+        </div>
+        <div class="menuBody">
+            <div >
+                <stl:a channelIndex="jiejue">解决方案</stl:a>
+            </div>
+            <div class="menuimg">
+                <img src="./images/右箭头.png" alt="">
+            </div>
+        </div>
+        <div class="menuBody">
+            <div>
+                <stl:a channelIndex="news">行业要闻</stl:a>
+            </div>
+            <div class="menuimg">
+                <img src="./images/右箭头.png" alt="">
+            </div>
+        </div>
+        <div class="menuBody">
+            <div>
+                <stl:a channelIndex="cooperation">合作渠道</stl:a>
+            </div>
+            <div class="menuimg"> 
+                <img src="./images/右箭头.png" alt="">
+            </div>
+        </div>
+        <div class="menuBody">
+            <div>
+                <stl:a channelIndex="aboutus">关于我们</stl:a>
+            </div>
+            <div class="menuimg">
+                <img src="./images/右箭头.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 左滑菜单结束 -->
+    <!-- 蒙版 -->
+    <div id="mengban1">
+
+    </div>
+    <!-- 蒙版 -->
+
+</body>
+<script src="{Stl.SiteUrl}/js/index.js"></script>
+</html>
